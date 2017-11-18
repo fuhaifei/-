@@ -1,0 +1,10 @@
+Head=eval(input("Enter the number of heads:"))
+Foot=eval(input("Enter the number of foots:"))
+while Foot>4*Head or Foot<2*Head:
+    print("The statistic you enter is wrong,please enter again")
+    Head=eval(input("Enter the number of heads:"))
+    Foot=eval(input("Enter the number of foots:"))
+for i in range(Head):
+     if (i)*4+(Head-i)*2==Foot:
+         print("The number of rabbits:",i)
+         print("Tne number of chick:",Head-i)
